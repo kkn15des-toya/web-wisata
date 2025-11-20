@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batua Putri Rinjani - Wisata Lokal Lombok</title>
+    <meta name="description" content="Informasi lengkap tentang Pantai Senggigi, destinasi wisata populer di Lombok.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Wisata Lokal Lombok</div>
+            <ul>
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="../index.html#travel">Wisata</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="detail-hero">
+    <div class="detail-image" style="background: url('../assets/image/contoh-gambar.jpg'); background-size: cover; background-position: center;">
+            <!-- Pantai Senggigi image replaced with contoh-gambar.jpg -->
+        </div>
+    </section>
+
+    <section class="detail-content">
+        <div class="container">
+            <h1>Batua Putri Rinjani</h1>
+            <p class="description">Batua Putri Rinjani merupakan salah satu wisata alam di desa toya yang menyuguhkan destinasi wisata dengan panorama alam yang asri, dimana di dalam wisata ini anda akan disuguhkan dengan kolam dan air terjun alami yang airnya berasal dari bawah kaki gunung rinjani, selain panorama wisata disana juga anda akan disuguhkan dengan berbagai aneka makanan khas desa toya  </p>
+
+            <div class="detail-info">
+                <div class="info-item">
+                    <h3>Jam Buka</h3>
+                    <p>08:00-17:00</p>
+                </div>
+                <div class="info-item">
+                    <h3>Harga Tiket</h3>
+                    <p>5.000 (Free vocher wifi)</p>
+                </div>
+                <div class="info-item">
+                    <h3>Alamat Lengkap</h3>
+                    <p>Depan kantor desa toya,Kecamatan Aikmel,Kabupaten Lombok Timur,Nusa Tenggara Barat</p>
+                </div>
+            </div>
+            <img src="th7.jpeg" class="card-img-top" alt="batua-putri-rinjani"
+            width="400px" height="400px">
+            <img src="th8.jpeg" class="card-img-top" alt="batua-putri-rinjani"
+            width="400px" height="400px">
+            <img src="th9.jpeg" class="card-img-top" alt="batua-putri-rinjani"
+            width="400px" height="400px">
+            <img src="th10.jpeg" class="card-img-top" alt="batua-putri-rinjani"
+            width="400px" height="400px">
+
+
+            <div class="map-section">
+                <h3>Lokasi</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4510.060989721038!2d116.50759299010541!3d-8.549327668540318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcc351ceb7d56f5%3A0x70f806d25195f0b4!2sAir%20Terjun%20Kokoq%20Tanggek!5e0!3m2!1sid!2sid!4v1761223060283!5m2!1sid!2sid" width="1150" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Wisata Lokal Lombok. Hasil Kolaborasi KKN Universitas Hamzanwadi dengan Pemerintah Desa Toya.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/script.js"></script>
+    <script>
+        // Detail page specific animations
+        window.addEventListener('load', () => {
+            const detailContent = document.querySelector('.detail-content');
+            if (detailContent) {
+                detailContent.style.opacity = '0';
+                detailContent.style.transform = 'translateY(50px)';
+                setTimeout(() => {
+                    detailContent.style.transition = 'opacity 1s ease, transform 1s ease';
+                    detailContent.style.opacity = '1';
+                    detailContent.style.transform = 'translateY(0)';
+                }, 500);
+            }
+
+            // Animate info items with stagger
+            document.querySelectorAll('.info-item').forEach((item, index) => {
+                item.style.opacity = '0';
+                item.style.transform = 'translateY(30px)';
+                setTimeout(() => {
+                    item.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                    item.style.opacity = '1';
+                    item.style.transform = 'translateY(0)';
+                }, 700 + index * 200);
+            });
+        });
+    </script>
